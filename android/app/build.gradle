@@ -3,6 +3,8 @@ plugins {
     id "kotlin-android"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
+
+    id "applovin-quality-service"
 }
 
 android {
@@ -41,4 +43,8 @@ android {
 
 flutter {
     source = "../.."
+}
+
+applovin {
+    apiKey "sdk-key"
 }
